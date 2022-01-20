@@ -1,0 +1,21 @@
+
+.row-parent {
+    display: flex;
+    flex-direction: row;
+}
+
+.item {
+    margin-left: 5px;
+}
+
+.hist-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.game-history-field {
+    
+    color: white;
+    background-color:  rgb(131, 14, 73);
+    width: 600px;
+    border-radius: 5px;
+}

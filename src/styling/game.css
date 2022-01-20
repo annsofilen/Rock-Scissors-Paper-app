@@ -1,0 +1,113 @@
+.move-options {
+    border: none;
+    width: 200px;
+    height: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(219, 120, 169);
+    text-transform: uppercase ;
+    color: white;
+    font-style:oblique;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.move-options:hover {
+    size: 1.1em;
+    background-color: rgb(243, 145, 194);
+}
+
+.move-options:active {
+    size: 1.1em;
+    background-color: rgb(243, 145, 194);
+    border:rgb(131, 14, 73)
+}
+
+.game-field {
+    border-radius: 5px;
+    width: 1000px;
+    justify-content: center;
+    
+}
+
+.set-name {
+    width: 400px;
+    height: 70px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase ;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: white;
+    text-align: center;
+}
+
+.set-name:hover {
+    border:rgb(131, 14, 73);
+    color:rgb(131, 14, 73);
+}
+.set-name-button {
+    border: none;
+    width: 200px;
+    height: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(219, 120, 169);
+    text-transform: uppercase ;
+    color: white;
+    font-style:oblique;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+
+.set-name-button:hover {
+    size: 1.1em;
+    background-color: rgb(243, 145, 194);
+}
+
+.App {
+    background-color: rgb(248, 241, 245);
+    justify-content: center;
+    padding-left: 20%;
+
+}
+
+.greeting {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.rules-box {
+    width: 600px;
+    
+    
+    font-size: medium;
+    color: white;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: rgb(131, 14, 73);
+    border-radius: 15px ;
+    border: white;
+    text-align: center;
+}
+
+.routes-field {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.app-parent {
+    display: flex;
+    flex-direction: row;
+}
+
+.app-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(65, 63, 63);
+    text-transform: uppercase;
+}

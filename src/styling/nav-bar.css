@@ -1,0 +1,30 @@
+
+.navbar {
+    width: 100px;
+    height: 800px;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    
+}
+
+.span-1 {
+    margin-top: 72px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgb(53, 52, 52);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: thistle;
+    border-radius: 5px;
+}
+.span-2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgb(53, 52, 52);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: thistle;
+    border-radius: 5px;
+}
