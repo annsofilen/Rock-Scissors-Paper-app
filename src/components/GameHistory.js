@@ -6,9 +6,11 @@ import '../styling/history.css'
 
 function GameHistory() {
 
+    // get gameHistory information from the redux store
     let history = useSelector((state) => { return state.gameHistory })
     history.unshift();
 
+    // add an ID to all played games, to be used for looping out the game history of the redux store
     for (let i = 0; i < history.length; i++) {
         history[i].id = i;
     }
