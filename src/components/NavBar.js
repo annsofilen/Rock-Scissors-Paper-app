@@ -9,7 +9,7 @@ import '../styling/nav-bar.css'
 function NavBar() {
 
 
-
+    // left navbar 
     return (
         <div className='navbar'>
             <span className='span-1'>  <Link to={'/history'} style={{ textDecoration: 'none' }} >Game History</Link>  </span>

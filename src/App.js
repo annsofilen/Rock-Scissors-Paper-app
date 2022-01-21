@@ -12,10 +12,13 @@ import { Routes, Route, Link } from 'react-router-dom';
 
 
 function App() {
+  // state of player name
   let [name, setName] = useState('Stranger');
+
+  // get the player´s name from the Player.js component
   function getPlayerName(name) {
     setName(name);
-    console.log('NAME: ' + name)
+
   }
   return (
     <div className="App">

@@ -28,9 +28,7 @@ function GameRow({ id, player, winner, playerMove, computerMove }) {
     return (
 
         <div className='row-parent'>
-
             <p className='item' > | Name of player: {player}  | </p>
-
             <p className='item' > |Winner: {winner} | </p>
         </div>
     )
