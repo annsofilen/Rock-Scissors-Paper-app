@@ -97,7 +97,6 @@ function Game({ name }) {
 
     useEffect(() => {
         determineWinner();
-        console.log(winner)
         dispatch(addGameHistory(generateGameHistory(name, playerMove, computerMove, winner, tie)))
 
     }, [handleMove])

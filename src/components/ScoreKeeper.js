@@ -8,24 +8,18 @@ function ScoreKeeper() {
     let computer = useSelector((state) => { return state.computerWins });
     let nameOfPlayer = useSelector((state) => { return state.nameOfPlayer });
 
-    console.log(typeof (player))
-
 
     // body of score keeper component
     return (
         <section className='score-keeper-field'>'
-            <h1 className='score-title'>RESULTS</h1>
+            <h1 className='score-title'>Score Keeper</h1>
             <div>
                 <span className='score'> <p>{nameOfPlayer.toUpperCase()}: {player} </p> </span>
                 <span className='score'> <p> - </p> </span>
                 <span className='score' ><p> COMPUTER: {computer}</p></span>
             </div>
 
-            <div>
-                <span className='score'> <p>{nameOfPlayer.toUpperCase()}:  {Math.round(player / (player + computer + 0.000001) * 100)}% </p> </span>
-                <span className='score'> <p> - </p> </span>
-                <span className='score' ><p> COMPUTER:   {Math.round(computer / (player + computer + 0.000001) * 100)}% </p></span>
-            </div>
+
         </section>
     )
 }

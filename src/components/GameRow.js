@@ -20,10 +20,10 @@ function GameRow({ id, player, winner, playerMove, computerMove }) {
     return (
 
         <div className='row-parent'>
-            <p className='item' >  Name of player: {player}  </p>
+            <p className='item' >  Name of player: {player.toUpperCase()}  </p>
             <p className='item' >  Player´s move: {correctMove(playerMove)}  </p>
             <p className='item' > Computer´s move: {correctMove(computerMove)} </p>
-            <p className='item' > Winner: {winner}  </p>
+            <p className='item' > Winner: {winner.toUpperCase()}  </p>
         </div>
     )
 }

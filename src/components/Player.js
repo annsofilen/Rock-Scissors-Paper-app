@@ -27,7 +27,7 @@ function Player({ getName, name }) {
 
     return (
         <section>
-            <h2 className='greeting'>Hello there, {name}!</h2>
+            <h2 className='greeting'>Hello there, {name.toUpperCase()}!</h2>
             <input className='set-name' type='text' placeholder='your name' onKeyUp={getPlayerName}></input>
             <button className='set-name-button' onClick={newPlayer}>NEW PLAYER</button>
         </section>

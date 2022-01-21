@@ -3,6 +3,7 @@ import './styling/game.css'
 import { useState } from "react";
 import { currentPlayer } from './actions/gameActions';
 import { useDispatch } from 'react-redux';
+import { Routes, Route } from 'react-router-dom';
 
 import Player from "./components/Player";
 import Game from "./components/Game";
@@ -10,7 +11,8 @@ import GameHistory from "./components/GameHistory";
 import ScoreKeeper from "./components/ScoreKeeper";
 import NavBar from "./components/NavBar";
 import Rules from './components/Rules';
-import { Routes, Route } from 'react-router-dom';
+import GameStatistics from './components/GameStatistics';
+
 
 
 function App() {
@@ -42,6 +44,7 @@ function App() {
             <Routes>
               <Route path='/history' element={<GameHistory />} />
               <Route path='/rules' element={<Rules />} />
+              <Route path='/statistics' element={<GameStatistics />} />
             </Routes>
           </div>
         </div>
