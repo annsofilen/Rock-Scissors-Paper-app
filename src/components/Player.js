@@ -10,16 +10,20 @@ function Player({ getName, name }) {
     // dispatcher to activate gameActions
     let dispatch = useDispatch()
 
+    let playerName = '';
+
+
     // function to get name information from the Player.js text input to App.js
     function getPlayerName(event) {
-        let playerName = event.target.value;
-        getName(playerName);
+        playerName = event.target.value;
+
     }
 
     // set the name of a new player, reset the current score board
     function newPlayer() {
         dispatch(resetScoreBoard());
         dispatch(currentPlayer(name))
+        getName(playerName);
     }
 
 

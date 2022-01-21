@@ -18,7 +18,6 @@ function App() {
   // get the player´s name from the Player.js component
   function getPlayerName(name) {
     setName(name);
-
   }
   return (
     <div className="App">

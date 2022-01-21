@@ -1,8 +1,6 @@
-import { Routes, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-import Game from "../components/Game";
-import GameHistory from "../components/GameHistory";
-import Rules from './Rules';
+
 
 import '../styling/nav-bar.css'
 
