@@ -6,14 +6,17 @@ import '../styling/game.css'
 
 function Player({ getName, name }) {
 
-    let playerName = '';
+
+    // dispatcher to activate gameActions
     let dispatch = useDispatch()
 
+    // function to get name information from the Player.js text input
     function getPlayerName(event) {
-        playerName = event.target.value;
+        let playerName = event.target.value;
         getName(playerName);
     }
 
+    // set the name of a new player, reset the current score board
     function newPlayer() {
         dispatch(resetScoreBoard());
         dispatch(currentPlayer(name))
