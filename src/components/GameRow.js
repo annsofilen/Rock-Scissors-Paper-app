@@ -1,7 +1,7 @@
 import '../styling/history.css'
 
 function GameRow({ id, player, winner, playerMove, computerMove }) {
-
+    // show the name of the move instead of 0, 1 or 2
     function correctMove(move) {
         if (move === 0) {
             return 'ROCK';

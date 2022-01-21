@@ -9,6 +9,7 @@ function GameStatistics() {
     let computer = useSelector((state) => { return state.computerWins });
     let nameOfPlayer = useSelector((state) => { return state.nameOfPlayer });
 
+    // count the number each move has been set for the player
     function moveStatistics() {
         let rockCount = 0;
         let paperCount = 0;
@@ -25,6 +26,7 @@ function GameStatistics() {
         return [rockCount, paperCount, scissorsCount];
     }
 
+    // count the number each move has been set for the computer
     function moveStatistiComputer() {
         let rockCount = 0;
         let paperCount = 0;
