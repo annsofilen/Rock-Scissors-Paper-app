@@ -2,15 +2,15 @@ import gameActions from '../actions/gameActions';
 
 const initializeState = {
     gameHistory: [],
-    playerWins: 0,
-    computerWins: 0,
+    playerWins: -1,
+    computerWins: -1,
     nameOfPlayer: 'PLAYER'
 }
 
 const gameReducer = (state = initializeState, action) => {
     switch (action.type) {
         case 'ADD_GAME_HISTORY':
-            console.log(action.payload)
+
             return {
                 ...state,
                 gameHistory: [action.payload, ...state.gameHistory]

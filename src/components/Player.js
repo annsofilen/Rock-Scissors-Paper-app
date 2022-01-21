@@ -15,7 +15,6 @@ function Player({ getName, name }) {
     // function to get name information from the Player.js text input to App.js
     function getPlayerName(event) {
         playerName = event.target.value;
-        //etName(playerName);
 
     }
 

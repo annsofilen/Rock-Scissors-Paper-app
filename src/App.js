@@ -10,7 +10,7 @@ import GameHistory from "./components/GameHistory";
 import ScoreKeeper from "./components/ScoreKeeper";
 import NavBar from "./components/NavBar";
 import Rules from './components/Rules';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 
 function App() {

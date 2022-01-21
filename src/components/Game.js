@@ -14,7 +14,6 @@ function Game({ name }) {
     let [computerMove, setComputerMove] = useState();
     let [playerMove, setPlayerMove] = useState();
 
-    console.log('type of: ' + typeof (playerMove))
 
     //booleans to decide winner
     let playerIsAWinner = false;
@@ -36,7 +35,6 @@ function Game({ name }) {
     // handle  click event for rock, scissors and paper button. Updates states for Players move and Computers move
     function handleMove(event) {
         setComputerMove(Math.floor(Math.random() * 3));
-        // setComputerMove(Math.floor(Math.random() * moveOptions.length));
         setPlayerMove(parseInt(event.target.value));
 
 
@@ -99,7 +97,6 @@ function Game({ name }) {
 
     useEffect(() => {
         determineWinner();
-        //printResults();
         console.log(winner)
         dispatch(addGameHistory(generateGameHistory(name, playerMove, computerMove, winner, tie)))
 
