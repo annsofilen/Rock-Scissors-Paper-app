@@ -3,13 +3,13 @@ import { useSelector } from 'react-redux';
 import '../styling/score-keeper.css';
 
 function ScoreKeeper() {
-    let history = useSelector((state) => { return state.gameHistory });
+    // collect data from redux store
     let player = useSelector((state) => { return state.playerWins });
     let computer = useSelector((state) => { return state.computerWins });
     let nameOfPlayer = useSelector((state) => { return state.nameOfPlayer });
 
 
-
+    // body of score keeper component
     return (
         <section className='score-keeper-field'>'
             <h1 className='score-title'>RESULTS</h1>

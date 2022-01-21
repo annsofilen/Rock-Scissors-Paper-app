@@ -116,7 +116,7 @@ function Game({ name }) {
     }, [computerMove])
 
 
-
+    // body of Game component
     return (
         <section>
             <button className='move-options' onClick={handleClick} value='0' >Rock</button>
