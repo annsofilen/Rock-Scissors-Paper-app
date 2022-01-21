@@ -1,6 +1,8 @@
 import './styling/game.css'
 
 import { useState } from "react";
+import { currentPlayer } from './actions/gameActions';
+import { useDispatch } from 'react-redux';
 
 import Player from "./components/Player";
 import Game from "./components/Game";
@@ -12,12 +14,15 @@ import { Routes, Route, Link } from 'react-router-dom';
 
 
 function App() {
+
+  let dispatch = useDispatch();
   // state of player name
   let [name, setName] = useState('Stranger');
 
-  // get the player´s name from the Player.js component
+  // get the player´s name from the Player.js component, add the current player name to the redux store
   function getPlayerName(name) {
     setName(name);
+    dispatch(currentPlayer(name))
   }
   return (
     <div className="App">

@@ -1,5 +1,4 @@
 import { resetScoreBoard } from '../actions/gameActions';
-import { currentPlayer } from '../actions/gameActions';
 import { useDispatch } from 'react-redux';
 
 import '../styling/game.css'
@@ -16,13 +15,13 @@ function Player({ getName, name }) {
     // function to get name information from the Player.js text input to App.js
     function getPlayerName(event) {
         playerName = event.target.value;
+        //etName(playerName);
 
     }
 
     // set the name of a new player, reset the current score board
     function newPlayer() {
         dispatch(resetScoreBoard());
-        dispatch(currentPlayer(name))
         getName(playerName);
     }
 
