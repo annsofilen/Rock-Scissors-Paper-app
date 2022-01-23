@@ -12,7 +12,7 @@ import ScoreKeeper from "./components/ScoreKeeper";
 import NavBar from "./components/NavBar";
 import Rules from './components/Rules';
 import GameStatistics from './components/GameStatistics';
-
+import HistoryDb from './components/HistoryDb';
 
 
 function App() {
@@ -45,6 +45,7 @@ function App() {
               <Route path='/history' element={<GameHistory />} />
               <Route path='/rules' element={<Rules />} />
               <Route path='/statistics' element={<GameStatistics />} />
+              <Route path='/allhistory' element={<HistoryDb />} />
             </Routes>
           </div>
         </div>

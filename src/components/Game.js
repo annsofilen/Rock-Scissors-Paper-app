@@ -74,7 +74,7 @@ function Game({ name }) {
 
         } else if (playerMove === computerMove) {
             tie = true;
-            winner = 'Both - None'
+            winner = 'Both'
             dispatch(setPlayerWin())
             dispatch(setComputerWin())
 

@@ -14,9 +14,6 @@ function GameRow({ id, player, winner, playerMove, computerMove }) {
 
 
 
-
-    //
-
     return (
 
         <div className='row-parent'>
